@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Premium Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Ana İçerik -->
+    <div class="main-content">
+      <div id="countdown" class="countdown glow">00.00000</div>
+    </div>
+
+    <!-- Tema Seçici -->
+    <div id="themeSelectorWrapper" class="theme-selector-wrapper">
+      <select id="themeSelector" class="theme-selector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="theme1">Tema 1</option>
+        <option value="theme2">Tema 2</option>
+        <option value="theme3">Tema 3</option>
+        <option value="theme4">Tema 4</option>
+        <option value="theme5">Tema 5</option>
+        <option value="theme6">Tema 6</option>
+        <option value="theme7">Tema 7</option>
+        <option value="theme8">Tema 8</option>
+        <option value="theme9">Tema 9</option>
+        <option value="theme10">Tema 10</option>
+      </select>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>&#x2699;&#xFE0F; Hedef Tarihi Düzenle</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="date" id="modalDate" class="date-picker">
+          <div class="modal-actions">
+            <button id="modalCancel" class="btn secondary">İptal</button>
+            <button id="modalSave" class="btn primary">Kaydet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="settings-modal">
+      <div class="settings-content">
+        <h3>Ayarlar</h3>
+        <!-- Metin Girişi İçin Alan -->
+        <div>
+          <label for="customTextInput">Yazı (isteğe bağlı):</label>
+          <input id="customTextInput" type="text" placeholder="Hedef açıklaması girin">
+        </div>
+        <label for="digitCount">Basamak Sayısı:</label>
+        <input type="number" id="digitCount" min="1" max="30" value="7">
+        <br>
+        <label for="refreshRate">Yenileme Hızı (ms):</label>
+        <input type="number" id="refreshRate" min="500" max="5000" value="1000">
+        <br>
+        <label for="dateSetting">Tarih Ayarı:</label>
+        <input type="date" id="dateSetting" value="">
+        <br>
+        <button id="applySettings" class="btn primary">Uygula</button>
+        <button id="closeSettings" class="btn secondary">Kapat</button>
+      </div>
+    </div>
+
+    <!-- Hata Mesajı -->
+    <div id="errorPopup" class="error-popup">Geçersiz değer! Lütfen 500ms ile 5000ms arasında bir değer girin.</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button class="btn" id="themeToggle">🎨 Tema Değiştir</button>
+    <button class="btn" id="settingsToggle">⚙️ Ayarlar</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

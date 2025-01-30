@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a393d408-9b67-453a-b90d-b7d0aa0f3107)# 📅 Motivational-Countdown-Extension - Tarayıcı Eklentisi
+# 📅 Motivational-Countdown-Extension - Tarayıcı Eklentisi
 
 Her yeni sekmede otomatik olarak çalışan ve ileri/geri tarihe göre özelleştirilebilir bir zaman sayacı!  
 

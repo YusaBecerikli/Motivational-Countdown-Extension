@@ -1,4 +1,4 @@
-# 📅 Advanced Time Counter - Tarayıcı Eklentisi
+# 📅 Motivational-Countdown-Extension - Tarayıcı Eklentisi
 
 Her yeni sekmede otomatik olarak çalışan ve ileri/geri tarihe göre özelleştirilebilir bir zaman sayacı!  
 
@@ -8,24 +8,23 @@ Her yeni sekmede otomatik olarak çalışan ve ileri/geri tarihe göre özelleş
 ✅ **Hassasiyet Ayarı** – Yıl bazında gösterilen sayacın virgülden sonraki basamak sayısını belirleyebilirsiniz.  
 ✅ **Güncellenme Sıklığı** – Sayaç belirlenen aralıklarla otomatik olarak yenilenir.  
 ✅ **Tema Desteği** – Farklı renk ve stil seçenekleriyle sayacın görünümünü kişiselleştirin.  
-✅ **Tamamen Otomatik** – Yeni bir sekme açıldığında sayaç anında görünür.  
 
 ## 📥 Kurulum  
 
-1. **[Eklentiyi İndir](#)** – (Bağlantıyı buraya ekleyin)  
-2. Tarayıcınızda `Geliştirici Modu`nu açın.  
-3. **Eklenti Dosyalarını** yükleyerek aktif hale getirin.  
+1. Eklentiyi İndirin.
+2. Tarayıcınızın **Uzantılar** sayfasını açın. ([Chrome](chrome://extensions),[Brave](brave://extensions/))
+3. Açılan sayfanın sağ üstünden `Geliştirici Modu`nu açın.
+4. Paketlenmemiş öğe yükle butonuna basın. 
+5. **Eklenti Dosyalarını** yükleyerek aktif hale getirin.
 
 ## ⚙️ Kullanım  
 
-- **İleri/Geri** seçeneği ile zaman yönünü belirleyin.  
-- **Hassasiyet ayarı** ile sayının ondalık basamağını değiştirin.  
-- **Yenilenme sıklığını** seçerek güncelleme aralığını ayarlayın.  
-- **Farklı temalar** arasından seçim yaparak sayacı kişiselleştirin.  
+- Eklentiyi kurduktan sonra yeni boş bir sekme açın. Açılan sekmede sayacın üstüne yazacağınız yazıyı, virgülden sonraki basamak sayısını, yenilenme sıklığını ve tarihi girip **Uygula** tuşuna basın.
+- **Ayarlar** ve **Tema** seçeneklerine ulaşmak için sayfayı aşağıya doğru kaydırın ve düzenlemeleri yapın.
 
 ## 🛠 Geliştirme  
 
 Eklentiye katkıda bulunmak veya özelleştirmek için:  
 
 ```bash
-git clone https://github.com/kullanici-adi/proje-adi.git
+git clone https://github.com/YusaBecerikli/Motivational-Countdown-Extension

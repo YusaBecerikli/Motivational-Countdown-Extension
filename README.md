@@ -15,7 +15,7 @@ Her yeni sekmede otomatik olarak çalışan ve ileri/geri tarihe göre özelleş
 ## 📥 Kurulum  
 
 1. Eklentiyi İndirin.
-2. Tarayıcınızın **Uzantılar** sayfasını açın. (![Chrome](chrome://extensions),![Brave](brave://extensions/))
+2. Tarayıcınızın **Uzantılar** sayfasını açın. [Chrome](chrome://extensions) [Brave](brave://extensions/)
 3. Açılan sayfanın sağ üstünden `Geliştirici Modu`nu açın.
 4. Paketlenmemiş öğe yükle butonuna basın. 
 5. **Eklenti Dosyalarını** yükleyerek aktif hale getirin.

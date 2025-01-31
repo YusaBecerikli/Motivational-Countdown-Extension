@@ -233,7 +233,9 @@ input {
 .theme-select:hover::after {
   color: #f39c12;
 }
-
+.selectWrapper{
+  display: none;
+}
 /* From Uiverse.io by gharsh11032000 */ 
 .button {
   cursor: pointer;

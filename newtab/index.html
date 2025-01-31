@@ -13,8 +13,8 @@
     </div>
 
     <!-- Tema Seçici -->
-    <div id="themeSelectorWrapper" class="theme-selector-wrapper">
-      <select id="themeSelector" class="theme-selector">
+    <div id="themeSelectorWrapper" class="selectWrapper">
+      <select id="themeSelector" class="theme-select">
         <option value="light">Light</option>
         <option value="dark">Dark</option>
         <option value="theme1">Tema 1</option>
@@ -40,8 +40,8 @@
         <div class="modal-body">
           <input type="date" id="modalDate" class="date-picker">
           <div class="modal-actions">
-            <button id="modalCancel" class="btn secondary">İptal</button>
-            <button id="modalSave" class="btn primary">Kaydet</button>
+            <button id="modalCancel" class="button">İptal</button>
+            <button id="modalSave" class="button">Kaydet</button>
           </div>
         </div>
       </div>
@@ -51,22 +51,48 @@
     <div id="settingsModal" class="settings-modal">
       <div class="settings-content">
         <h3>Ayarlar</h3>
-        <!-- Metin Girişi İçin Alan -->
-        <div>
-          <label for="customTextInput">Yazı (isteğe bağlı):</label>
-          <input id="customTextInput" type="text" placeholder="Hedef açıklaması girin">
+        <center>
+        <label for="customTextInput">Yazı (isteğe bağlı):</label>
+        <div class="textInputWrapper">
+          <input id="customTextInput" placeholder="Hedef açıklaması girin" type="text" class="textInput">
         </div>
-        <label for="digitCount">Basamak Sayısı:</label>
-        <input type="number" id="digitCount" min="1" max="30" value="7">
+        <br>
+        <label for="customTextInput">Virgülden Sonraki Basamak Sayısı:</label>
+        <div class="textInputWrapper">
+          <input id="digitCount" min="1" max="30" value="8" type="number" class="textInput">
+        </div>
         <br>
         <label for="refreshRate">Yenileme Hızı (ms):</label>
-        <input type="number" id="refreshRate" min="500" max="5000" value="1000">
+        <div class="textInputWrapper">
+          <input id="refreshRate" min="1" max="5000" value="1000" type="number" class="textInput">
+        </div>
         <br>
         <label for="dateSetting">Tarih Ayarı:</label>
-        <input type="date" id="dateSetting" value="">
         <br>
-        <button id="applySettings" class="btn primary">Uygula</button>
-        <button id="closeSettings" class="btn secondary">Kapat</button>
+        <input class="dateInput" type="date" id="dateSetting" value="">
+        <br><br>
+        <button id ="applySettings" type="button" class="button">
+          <strong>Uygula</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+        
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
+        <button id ="closeSettings" type="button" class="button">
+          <strong>Kapat</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+        
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button></center>
       </div>
     </div>
 
@@ -76,8 +102,28 @@
 
   <!-- Footer -->
   <footer>
-    <button class="btn" id="themeToggle">🎨 Tema Değiştir</button>
-    <button class="btn" id="settingsToggle">⚙️ Ayarlar</button>
+<button id ="themeToggle" type="button" class="button">
+  <strong>🎨 Tema</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</button>
+<button id ="settingsToggle" type="button" class="button">
+  <strong>⚙️ Ayarlar</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</button>
   </footer>
 
   <script src="script.js"></script>

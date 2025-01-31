@@ -20,20 +20,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-footer .btn {
-  margin: 0 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-footer .btn:hover {
-  background-color: #0056b3;
-}
 /* Temalar */
 body {
   transition: background-color 0.3s, color 0.3s;
@@ -186,16 +173,6 @@ input {
   margin-top: 5px;
 }
 
-.btn.primary {
-  background: var(--primary-color);
-  color: var(--bg-color);
-}
-
-.btn.secondary {
-  background: var(--secondary-color);
-  color: var(--text-color);
-}
-
 .settings-bar {
   margin-top: 1rem;
 }
@@ -232,68 +209,186 @@ input {
   cursor: pointer;
 }
 
-/* Buton Stili */
-.btn {
-  font-size: 17px;
-  background: transparent;
-  border: none;
-  padding: 1em 1.5em;
-  color: var(--text-color);
-  text-transform: uppercase;
+.theme-select {
   position: relative;
-  transition: 0.5s ease;
+  display: flex;
+  background-color: var(--secondary-color);
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+
+.theme-select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.theme-select:hover::after {
+  color: #f39c12;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
   cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
 }
 
-.btn::before {
-  content: "";
+.button::before {
+  content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: var(--text-color);
-  transition: 0.5s ease;
-}
-
-.btn:hover {
-  color: #1e1e2b;
-  transition-delay: 0.5s;
-}
-
-.btn:hover::before {
-  width: 100%;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: var(--text-color);
-  transition: 0.4s ease;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
   z-index: -1;
-}
-
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
-}
-
-.theme-selector {
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 16px;
   background-color: var(--primary-color);
-  color: white;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-/* Tema Seçici Wrapper Başlangıçta Gizli */
-.theme-selector-wrapper {
-  display: none;
+.button:hover::before {
+  scale: 3;
 }
 
-/* Diğer stiller burada kalabilir */
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+
+/* From Uiverse.io by WhiteNervosa */ 
+.textInputWrapper {
+  position: relative;
+  width: 180px;
+  margin: 12px 5px;
+  --accent-color: var(--primary-color);
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -1px;
+  z-index: 4;
+  width: 100%;
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:focus-within:after {
+  border-bottom: 2px solid var(--accent-color);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  will-change: transform;
+  border-bottom: 2px solid var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.textInput::placeholder {
+  transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.textInputWrapper .textInput {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+  max-height: 36px;
+  background-color: #252525;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 200ms;
+  transition-property: background-color;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  width: 100%;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  outline: none;
+}
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  background-color: #353535;
+}
+
+.textInputWrapper:focus-within .textInput::placeholder {
+  opacity: 0;
+}
+/* From Uiverse.io by pandey_saurav_ */ 
+.dateInput {
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  color:#F3F3F3;
+  background-color: #353535;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.dateInput:hover,
+.dateInput:focus {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: #222222;
+}
